@@ -19,3 +19,11 @@ void Hitung_RataRata_Bobot(Siswa siswa) {
     cout << "Rata-Rata Bobot " << siswa.nama << " Adalah " << RataRataBobot << endl;
 }
 
+void Hitung_Ambang_Nilai(Siswa siswa, float NilaiAkhir) {
+    float AmbangNilai = 60;
+    if (NilaiAkhir >= AmbangNilai) {
+        cout << siswa.nama << " Lulus dengan Nilai " << NilaiAkhir << endl;
+    } else {
+        cout << siswa.nama << " Tidak Lulus dengan Nilai " << NilaiAkhir << endl;
+    }
+}
