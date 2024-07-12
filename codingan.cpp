@@ -39,20 +39,20 @@ int main() {
     do {
         Siswa siswa;
         // Input data siswa
-        cout << "Masukkan Nama Siswa: ";
+        cout << "Masukkan Nama Siswa : ";
         getline(cin, siswa.nama); 
-        cout << "Masukkan Nilai Tugas: ";
+        cout << "Masukkan Nilai Tugas : ";
         cin >> siswa.NilaiTugas;
-        cout << "Masukkan Nilai Kuis: ";
+        cout << "Masukkan Nilai Kuis : ";
         cin >> siswa.NilaiKuis;
-        cout << "Masukkan Nilai Ujian: ";
+        cout << "Masukkan Nilai Ujian : ";
         cin >> siswa.NilaiUjian;
 
         cin.ignore(); // Membersihkan buffer input
 
         // Hitung nilai akhir siswa
         float NilaiAkhir = Hitung_Nilai_Akhir(siswa);
-        cout << "Nilai Akhir " << siswa.nama << " Adalah: " << NilaiAkhir << endl;
+        cout << "Nilai Akhir " << siswa.nama << " Adalah : " << NilaiAkhir << endl;
 
         // Hitung rata-rata bobot nilai siswa
         Hitung_RataRata_Bobot(siswa);
